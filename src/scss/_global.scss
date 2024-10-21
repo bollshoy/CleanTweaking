@@ -1,0 +1,25 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  font-family: var(--font);
+  background-color: var(--background-color);
+}
+
+.container {
+  @include container;
+}
+
+h1, h1, h2, h3, h4, h5, h6, a, p, li, span {
+  color: var(--white);
+}
+
+h1, h1, h2, h3, h4, h5, h6 {
+  @include title;
+}
+
+a, p, li {
+  @include text;
+}
+
+span {
+  @include subtitle;
+}

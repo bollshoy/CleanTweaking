@@ -1,0 +1,24 @@
+@mixin container {
+  max-width: var(--containerWidth);
+  padding: 0 var(--containerPadding);
+  align-items: center;
+  margin: 0 auto;
+}
+
+@mixin title {
+  font-weight: 700;
+  line-height: normal;
+  font-size: clamp(42px, 5vw, 82px);
+}
+
+@mixin text {
+  font-weight: 400;
+  line-height: normal;
+  font-size: clamp(16px, 2vw, 28px);
+}
+
+@mixin subtitle {
+  font-weight: 500;
+  line-height: normal;
+  font-size: clamp(16px, 3vw, 38px);
+}

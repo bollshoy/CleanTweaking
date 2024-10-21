@@ -1,0 +1,23 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .logo {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 48px;
+  }
+  
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .header__container{
+    justify-content: space-between;
+  }
+}

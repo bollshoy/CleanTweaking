@@ -1,0 +1,106 @@
+.test {
+  position: relative;
+  background-image: url("../assets/csgoBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+  overflow: hidden;
+  background-attachment: fixed;
+  margin-top: 120px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.test__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.test__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.test__circle-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+
+  .circle__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+
+    span {
+      color: var(--white);
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
+
+
+  .circle__item {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+
+  &:nth-child(1) .circle__item {
+    background: var(--circle-blue);
+  }
+
+  &:nth-child(2) .circle__item {
+    background: var(--circle-orange);
+  }
+
+  &:nth-child(3) .circle__item {
+    background: var(--circle-yellow);
+  }
+}
+
+.test__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  max-width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px){
+
+  .test__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
