@@ -1,8 +1,5 @@
-# React + Vite
+# CleanTweaking
+Используя широкие возможности CSS, HTML и Javascript и React, я создали отзывчивый React-сайт с 3D-графикой и анимацией. Для создания этого сайта, я использовал инструмент ThreeJS 3D.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![](https://raw.githubusercontent.com/bollshoy/CleanTweaking/main/src/assets/demo.png)
+[LIVE DEMO](https://bollshoy.github.io/CleanTweaking/#/)
