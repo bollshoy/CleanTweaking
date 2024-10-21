@@ -36,9 +36,6 @@ const Hero = () => {
 								Лучшая оптимизация<br/> для вашего ПК
 							</h1>
 						</div>
-						<div className="mouse" onClick={handleClick}>
-							<div className="roll"></div>
-						</div>
 						<p className="hero__text">
 							Ускорьте работу вашего компьютера: советы <br/>
 							и инструменты для максимальной производительности.

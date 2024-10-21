@@ -107,6 +107,10 @@
     height: 20px;
     padding: 10px;
     transition: all 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
 
     &:hover {
       background-color: var(--white);
@@ -117,10 +121,6 @@
     &::after {
       font-size: 20px;
     }
-  }
-
-  .swiper-button-prev {
-    margin-left: -10px;
   }
 }
 

@@ -58,32 +58,6 @@
   }
 }
 
-.mouse {
-  cursor: pointer;
-  width: 38px;
-  height: 84px;
-  border-radius: 999px;
-  border: 3.5px solid var(--white);
-  position: absolute;
-  overflow: hidden;
-  left: 80%;
-  top: 100%;
-  z-index: 2;
-
-  .roll {
-    position: absolute;
-    top: 8px;
-    left: 50%;
-    width: 10px;
-    margin-left: -4.3px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--white);
-    -webkit-animation: mouseScroll .8s cubic-bezier(.7, 0, .3, 1) infinite alternate;
-    animation: mouseScroll .8s cubic-bezier(.7, 0, .3, 1) infinite alternate;
-    z-index: 2;
-  }
-}
 
 @-webkit-keyframes mouseScroll {
   0% {

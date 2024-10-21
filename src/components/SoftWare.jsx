@@ -11,7 +11,7 @@ const SoftWare = () => {
 	const textRef = useRef(null);
 	const swiperRef = useRef(null);
 	const sectionRef = useRef(null);
-	const [hasAnimated, setHasAnimated] = useState(false); // Состояние для отслеживания анимации
+	const [hasAnimated, setHasAnimated] = useState(false);
 
 	useEffect(() => {
 		const observer = new IntersectionObserver((entries) => {
@@ -27,8 +27,8 @@ const SoftWare = () => {
 						gsap.fromTo(slide, { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, delay: index * 0.2 });
 					});
 
-					setHasAnimated(true); // Установить, что анимация выполнена
-					observer.unobserve(entry.target); // Остановить наблюдение после анимации
+					setHasAnimated(true);
+					observer.unobserve(entry.target);
 				}
 			});
 		});
@@ -70,6 +70,7 @@ const SoftWare = () => {
 								</SwiperSlide>
 						))}
 					</Swiper>
+
 				</div>
 			</section>
 	);

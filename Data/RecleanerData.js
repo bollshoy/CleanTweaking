@@ -35,9 +35,8 @@ export const RecleanerAbout = [
 ]
 
 export const RecleanerJoin = [
-	{id: 1, src: joinIcon, title: 'Запусков клиента', description: '34631'},
-	{id: 2, src: joinIcon, title: 'Пользователей клиента', description: '27947'},
-	{id: 3, src: joinIcon, title: 'Лет с момента открытия', description: '1.1'}
+	{id: 1, src: joinIcon, title: 'Пользователей клиента', description: '27947'},
+	{id: 2, src: joinIcon, title: 'Лет с момента открытия', description: '1.1'}
 ]
 
 export default RecleanerData
