@@ -25,7 +25,7 @@ jobs:
       - name: Build project
         run: npm run build
         env:
-          VITE_DOWNOLAD_LINK: ${{secrets.VITE_DOWNOLAD_LINK}}
+          VITE_DOWNLOAD_LINK: ${{secrets.VITE_DOWNOLAD_LINK}}
 
       - name: List files in dist  # Добавляем шаг для вывода содержимого папки dist
         run: ls -la ./dist
