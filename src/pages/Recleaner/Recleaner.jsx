@@ -30,7 +30,6 @@ const Recleaner = () => {
 		link.remove();
 	};
 
-
 	useEffect(() => {
 		// Анимация текста
 		gsap.from(textRef.current, {
@@ -146,8 +145,7 @@ const Recleaner = () => {
 											slideShadows: true,
 										}}
 										modules={[Navigation, EffectCoverflow]}
-										className="mySwiper"
-								>
+										className="mySwiper">
 									{RecleanerData.map((item) => (
 											<SwiperSlide key={item.id}>
 												<img src={item.src} alt={item.alt}/>
