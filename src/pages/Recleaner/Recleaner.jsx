@@ -22,26 +22,14 @@ const Recleaner = () => {
 
 	const handleDownload = () => {
 		const fileUrl = import.meta.env.VITE_DOWNLOAD_LINK;
-		fetch(fileUrl)
-				.then(response => {
-					if (!response.ok) {
-						throw new Error('Network response was not ok');
-					}
-					return response.blob();
-				})
-				.then(blob => {
-					const url = window.URL.createObjectURL(blob);
-					const link = document.createElement('a');
-					link.href = url;
-					link.setAttribute('download', 'RECLEANER.exe');
-					document.body.appendChild(link);
-					link.click();
-					link.remove();
-				})
-				.catch(error => {
-					console.error('There was a problem with the fetch operation:', error);
-				});
+		const link = document.createElement('a');
+		link.href = fileUrl;
+		link.setAttribute('download', 'RECLEANER.exe');
+		document.body.appendChild(link);
+		link.click();
+		link.remove();
 	};
+
 
 	useEffect(() => {
 		// Анимация текста
