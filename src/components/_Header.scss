@@ -1,4 +1,10 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.9);
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -7,7 +13,7 @@
     font-size: 42px;
     line-height: 48px;
   }
-  
+
   &__container {
     display: flex;
     align-items: center;
@@ -16,8 +22,8 @@
   }
 }
 
-@media screen and (max-width: 992px){
-  .header__container{
+@media screen and (max-width: 992px) {
+  .header__container {
     justify-content: space-between;
   }
 }
