@@ -89,7 +89,6 @@
     margin-bottom: 40px;
   }
 
-
   .recleaner__about-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -224,7 +223,7 @@
     .swiper-slide {
       background-position: center;
       background-size: cover;
-      max-width: 600px;
+      max-width: 500px;
       height: auto;
       overflow: visible;
       position: relative;

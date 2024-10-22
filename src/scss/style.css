@@ -149,3 +149,19 @@ span {
   line-height: normal;
   font-size: clamp(16px, 3vw, 38px);
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  -webkit-border-radius: var(--border-radius);
+  border-radius: var(--border-radius);
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: var(--border-radius);
+  border-radius: var(--border-radius);
+  background: var(--second-color);
+}

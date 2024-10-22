@@ -1,13 +1,14 @@
-import React, { useEffect, useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, EffectCoverflow } from "swiper/modules";
-import RecleanerData, { RecleanerAbout, RecleanerJoin, RecleanerIcon } from "../../../Data/RecleanerData.js";
+import React, {useEffect, useRef} from 'react';
+import {Swiper, SwiperSlide} from 'swiper/react';
+import {Navigation, EffectCoverflow} from "swiper/modules";
+import RecleanerData, {RecleanerAbout, RecleanerJoin, RecleanerIcon} from "../../../Data/RecleanerData.js";
 import information from '../../assets/information.svg';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import Header from "../../components/Header.jsx";
-import { NavLink } from "react-router-dom";
+import testIcon from '../../assets/test.svg';
+import {NavLink} from "react-router-dom";
 import 'swiper/swiper-bundle.css';
-import { gsap } from 'gsap';
+import {gsap} from 'gsap';
 import './_Recleaner.scss';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -116,7 +117,7 @@ const Recleaner = () => {
 	return (
 			<>
 				<div className="recleaner__bg"></div>
-				<Header />
+				<Header/>
 				<section className="recleaner">
 					<div className="recleaner__info">
 						<img src={information} alt="information" className="recleaner__info-img"/>
@@ -131,7 +132,7 @@ const Recleaner = () => {
 										effect="coverflow"
 										grabCursor={true}
 										centeredSlides={true}
-										slidesPerView="auto"
+										slidesPerView="3"
 										loop={true}
 										navigation={{
 											nextEl: '.swiper-button-next',
